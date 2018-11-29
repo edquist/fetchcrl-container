@@ -15,6 +15,7 @@ RUN yum install -y fetch-crl osg-ca-scripts
 
 
 COPY runme.sh /
+RUN chmod 755 /runme.sh
 
 CMD [ "/runme.sh" ]
 
